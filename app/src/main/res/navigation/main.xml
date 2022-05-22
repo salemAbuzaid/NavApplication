@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    app:startDestination="@id/frag2">
+
+    <fragment
+        android:id="@+id/frag1"
+        android:name="it.polito.navapplication.Frag1"
+        android:label="Frag1" >
+        <action
+            android:id="@+id/action_frag1_to_frag2"
+            app:destination="@id/frag2" />
+    </fragment>
+    <fragment
+        android:id="@+id/frag2"
+        android:name="it.polito.navapplication.Frag2"
+        android:label="Frag2" >
+        <action
+            android:id="@+id/action_frag2_to_frag3"
+            app:destination="@id/frag3" />
+    </fragment>
+    <fragment
+        android:id="@+id/frag3"
+        android:name="it.polito.navapplication.Frag3"
+        android:label="Frag3" >
+        <action
+            android:id="@+id/action_frag3_to_frag1"
+            app:destination="@id/frag1" />
+    </fragment>
+</navigation>
